@@ -1,6 +1,11 @@
 .friends{
     width: 25%;
-    
+    position: sticky;
+    z-index: 0;
+    padding-bottom: 20px;
+    height: calc(100vh - 125px);
+    overflow-y: scroll;
+    top: 100px;
 }
 .friends__container{
     background-color: var(--color-black);
@@ -11,7 +16,6 @@
 }
 .who-to-follow .headdy{
   color: var(--backdrop-filter-color);
-  text-shadow: var(--text-shadow);
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -45,12 +49,15 @@
     padding: 5px;
     cursor: pointer;
     transition: .3s all;
+    color: var(--backdrop-filter-color);
 }
 .wtfl-btn:hover{
     background: var(--color-primary);
     color: var(--backdrop-filter-color);
 }
-
+.friendname{
+    color: var(--backdrop-filter-color);
+}
 .wtfl-true{
     background: var(--color-primary);
     color: var(--backdrop-filter-color);
@@ -121,7 +128,7 @@
     .mobile__friends{
         display: flex;
         position: fixed;
-        top: 0%;
+        top: 0;
         left: 0;
         width: 70%;
         background-color: rgba(0,0,0,0.1);
@@ -129,6 +136,7 @@
        height: 100vh;
        justify-content: center;
        align-items: center;
+       overflow-y: scroll;
     }
     .mobile-friends-container{
         width: 80%;
@@ -136,7 +144,7 @@
     .mobileonlinefriends{
         display: flex;
         position: fixed;
-        top: 0%;
+        top: 0;
         left: 0;
         width: 60%;
         background-color: rgba(0,0,0,0.1);
@@ -145,11 +153,13 @@
        justify-content: center;
        align-items: center;
        z-index: 1;
+       overflow-y: scroll;
     }
     .online-container{
         width: 80%;
         background-color: var(--color-black);
         border-radius: 10px;
+    
     }
 }
 @media screen and (max-width: 500px) {
@@ -169,4 +179,7 @@
         left: 15%;
         z-index: 6;
     }
+}
+@media screen and (max-width: 500px) {
+    
 }

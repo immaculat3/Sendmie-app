@@ -1,7 +1,7 @@
 .header{
     position: sticky;
     top: 0;
-    background-color: rgba(0,0,0,0.1);
+    background-color: var(--backdrop-background);
     backdrop-filter: var(--backdrop-filter);
     width: 100%;
     z-index: 3;
@@ -45,6 +45,7 @@
     position: absolute;
     left: 3%;
     font-size: 1.5rem;
+    color: #eaf0fb;
 }
 .header__search{
     flex: 2;
@@ -59,8 +60,7 @@
   margin-right: 10px;
   padding-left: 2.9rem;
   font-size: .9rem;
-  color: var( --backdrop-filter-color);
-  text-shadow: var(--text-shadow);
+  color: #eaf0fb;
 }
 .header__search input::placeholder{
     padding-left: 10px;
@@ -70,6 +70,8 @@
 .create{
     display: flex;
 }
+
+
 .navlinks ul{
     flex: 1;
     display: flex;
@@ -78,8 +80,7 @@
     
 }
 .navlinks ul li a{
-    color: var( --backdrop-filter-color);
-  text-shadow: var(--text-shadow);
+    color: #eaf0fb;
     margin-right: 20px;
     transition: all .3s ease;
 }

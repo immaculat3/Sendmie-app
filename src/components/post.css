@@ -32,6 +32,11 @@
     font-style: italic;
 }
 
+.post__info p:first-child{
+    color: var( --backdrop-filter-color);
+    font-weight: 600;
+}
+
 .post__icon{
     font-size: 20px;
     cursor: pointer;
@@ -41,6 +46,7 @@
 }
 .post__middle p{
     margin-bottom: 15px;
+    color: var( --backdrop-filter-color);
 }
 .post__prof{
     margin-right: 10px;
@@ -55,6 +61,7 @@
 .post__semibottom p{
     font-size: 14px;
     font-style: italic;
+    color: var( --backdrop-filter-color);
 }
 
 .like__info{
@@ -106,8 +113,9 @@
     width: 90%;
     border: none;
     padding: 10px 0;
-  color: var(--color-white);
+  color: var( --backdrop-filter-color);
   font-size: 15px;
+
 }
 
 .post__form{
@@ -130,10 +138,17 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.commentlist-flex{
+    display: flex;
+    align-items: center;
+}
 .comment-delete{
     font-size: 25px;
     color: var(--color-primary);
+}
+
+.eachComm{
+    margin-left: 7px;
 }
 
 .i0{

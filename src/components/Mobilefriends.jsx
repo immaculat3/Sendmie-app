@@ -25,8 +25,10 @@ const Mobilefriends = () => {
   const [friendRequests, setFriendRequests] = useState(FriendRequests)
 
   const [isAccepted, setIsAccepted] = useState(friendRequests.accepted)
+  const [isAccept, setIsAccept] = useState(false)
 
 
+ 
   return (
     <motion.section className='mobile__friends'
     initial="hidden"
@@ -54,7 +56,9 @@ const Mobilefriends = () => {
                                   </div>
                                </div>
                                <div className="wtfl-bottom">
-                                 { accepted ? <FiUserCheck className="wtfl-btn wtfl-true" onClick={() => setIsAccepted(true)}/> :  <AiOutlinePlus className="wtfl-btn" onClick={() => setIsAccepted(true)}/>}     
+                                 { isAccepted ? <FiUserCheck className="wtfl-btn wtfl-true" 
+                                 /> :  <AiOutlinePlus className="wtfl-btn"    
+                                 />}     
                                </div>
                           </div>
                  )

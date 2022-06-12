@@ -9,13 +9,24 @@ import { GiHamburgerMenu} from 'react-icons/gi';
 import { Link, NavLink } from "react-router-dom";
 import profile1 from "../assets/profile1.jpg"
 import { useState } from "react";
+import Notification from "./Notification";
+import Settings from "./Settings";
+import Lightmode from "./Lightmode";
 
 const Header = () => {
 
     const [burgerLink, showBurgerLink] = useState(false)
+    const [showNotification, setShowNotification] = useState(false)
+    const [showSettings, setShowSettings] = useState(false)
 
     const showBurger = () => {
         showBurgerLink(prevState => !prevState)
+    }
+    const showNotify = () => {
+        setShowNotification(prevState => !prevState)
+    }
+    const showSetting = () => {
+        setShowSettings(prevState => !prevState)
     }
 
   return (
@@ -41,19 +52,23 @@ const Header = () => {
                             </ul>
                         </div>
                         <div className="create">
-                            {
+                            {/*
                                 burgerLink ?   <button className="btn btn-primary burger" 
                                 onClick={()=> showBurgerLink(false)}
                                 ><AiOutlineClose className="cre "  /></button> :   <button className="btn btn-primary burger" 
                                 onClick={showBurger}
                                 ><GiHamburgerMenu className="cre "  /></button>
-                            }
+  */}
                         
-                           <label htmlFor="createPost"> <button className="btn btn-primary cree"><BiMessageSquareAdd className="cre" /> Create </button></label>
-                            <button className="btn btn-primary "><AiOutlineSetting className="cre"  /></button>
-                            <button className="btn btn-primary "><IoMdNotifications className="cre"  /></button>
+                             <Lightmode />
+                            <button className="btn btn-primary "
+                              onClick={showSetting}
+                            ><AiOutlineSetting className="cre"  /></button>
+                            <button className="btn btn-primary "
+                              onClick={showNotify}
+                            ><IoMdNotifications className="cre"  /></button>
                         </div>
-                        <Link to="profile">
+                        <Link to="/profile">
                         <div className="profile">
                             <img src={profile1} alt="" className="profile-picture" />
                         </div>
@@ -62,6 +77,12 @@ const Header = () => {
          </div>
          {
                             burgerLink && <Burgermenu />
+                        }
+                        {
+                            showNotification && <Notification />
+                        }
+                        {
+                            showSettings && <Settings />
                         }
        </section>
     )

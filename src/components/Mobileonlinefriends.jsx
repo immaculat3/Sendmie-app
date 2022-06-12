@@ -29,9 +29,10 @@ const Mobileonlinefriends = () => {
     initial="hidden"
     animate="visible"
     exit={{
-     x: "-100vw",
-    transition:{ ease: 'easeInOut', duration: 2}
-   }}
+      x: "-100vw",
+     transition:{ ease: 'easeInOut'},
+     duration: 1
+    }}
     variants={Loadvariants}
     >
  <div className="online-container">

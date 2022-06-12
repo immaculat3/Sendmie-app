@@ -53,7 +53,7 @@ const Feeds = ({showProfile, setShowProfile}) => {
                          
                          <SplideSlide className="stories" key={id}>
                            <img src={background} alt="" className='bckg' />
-                           <Link to={`/singleprofile/${id}`}><img src={profileimg} alt="" className='profile-picture story__profile'/></Link>
+                           <img src={profileimg} alt="" className='profile-picture story__profile'/>
                            <p className='storyname'>{storyname}</p>
                          </SplideSlide>
                        )

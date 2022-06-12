@@ -6,6 +6,8 @@ import { AiFillLike} from 'react-icons/ai';
 import { FcLike} from 'react-icons/fc';
 import { FaCommentDots} from 'react-icons/fa';
 import { MdDeleteForever} from 'react-icons/md';
+import { motion } from 'framer-motion';
+import profilepicture from "../assets/profile1.jpg"
 import "./post.css"
 
 
@@ -22,6 +24,11 @@ const Post = () => {
         setposts(newPost)
     }
 
+    const [isLiked, setIsLiked] = useState(false)
+    const handlerlike = () => {
+        setIsLiked(prevState => !prevState)
+    }
+
     //comment section
     const [comment, setComment] = useState("")
     const [commentList, setCommentList] = useState([])
@@ -35,7 +42,6 @@ const Post = () => {
                 comm: comment
             }
         ])
-        console.log(commentList)
         setComment('')
        }
     }
@@ -70,11 +76,15 @@ const Post = () => {
                                     onClick={showModalHandler}
                                     />
                                   {
-                                      showModal ? (<div className='modal'
+                                      showModal ? (<motion.div className='modal'
                                       onClick={showModalHandler}
+                                      initial={{opacity : 0}}
+                                            animate={{opacity : 1,
+                                            transition: "ease-in"
+                                            }                                        }
                                       >
   <button className='btn btn-primary' onClick={()=> handleDeletePost(id)}>Delete post</button>
-                                      </div>) : null
+                                      </motion.div>) : null
                                   }
 
                                     
@@ -85,9 +95,13 @@ const Post = () => {
                                     </div>
                                     <div className="post__semibottom">
                                     <div className="like__info">
-                                    <AiFillLike className='post__icon'/>
-                                    <FcLike className='post__icon'/>
-                                    <p>{like}</p>
+                                    <AiFillLike className='post__icon'
+                                    onClick={handlerlike}
+                                    />
+                                    <FcLike className='post__icon'
+                                     onClick={handlerlike}
+                                    />
+                                    {isLiked ? <p>{like + 1}</p> : <p>{like}</p>}
                                     </div>
                                    <div className='text-muted ioo wee'>
                                        <p className='i0'>{commentList.length} </p>
@@ -96,7 +110,8 @@ const Post = () => {
                                  </div>
                                  <div className="post__bottomm">
                                      <div className='ioo'>
-                                     <buttton className="post__btnn btn"><FcLike className='post__icon '/> Like</buttton>
+                                     <buttton className="post__btnn btn"  onClick={handlerlike}><FcLike className='post__icon '
+                                     /> Like</buttton>
                                     <buttton className="post__btnn btn"><FaCommentDots className='post__icon'
                                     /> Comment</buttton>
 
@@ -119,7 +134,11 @@ const Post = () => {
                                        commentList.map((item) => {
                                               return(
                                     <div className="commentlist" key={item.id}>
+                                        <div className="commentlist-flex">
+                                        <img src={profilepicture} alt="" className='profile-picture2'/>
                                         <li className='eachComm'>{item.comm}</li>
+                                        </div>
+                                        
                                         <MdDeleteForever className='comment-delete'
                                         onClick={()=>handleCommentDelete(item.id)}
                                         />

@@ -2,12 +2,15 @@ import "./burgermenu.css"
 import {  NavLink } from "react-router-dom";
 import { FiSearch} from 'react-icons/fi';
 import { BiMessageSquareAdd} from 'react-icons/bi';
-
+import { motion } from "framer-motion";
 
 
 const Burgermenu = () => {
   return (
-                    <div className="burger__link">
+                    <motion.div className="burger__link"
+                    initial={{y: "-50vh"}}
+                    animate={{y: 0}}
+                    >
                             <ul>
                             <div className="burger__search">
                         <FiSearch className="text-muted srh" />
@@ -18,8 +21,8 @@ const Burgermenu = () => {
                                 <li><NavLink to="profile">Account</NavLink></li>
                                 <li><NavLink to="network">My Network</NavLink></li>
                             </ul>
-                            <button className="btn btn-primary creee"><BiMessageSquareAdd className="cre"  /> Create </button>
-                        </div>
+                            <button className="btn btn-primary creee"><BiMessageSquareAdd className="cre"  /> Logout </button>
+                        </motion.div>
   )
 }
 

@@ -36,7 +36,6 @@
       padding-left: 2.9rem;
       font-size: .9rem;
       color: var( --backdrop-filter-color);
-      text-shadow: var(--text-shadow);
     }
     .burger__search input::placeholder{
         padding-left: 10px;
@@ -50,8 +49,7 @@
      
     }
     .burger__link ul li a{
-     color: var( --backdrop-filter-color);
-    text-shadow: var(--text-shadow);
+     color: #eaf0fb;
      transition: all .3s ease;
     margin-bottom: 10px;
     }

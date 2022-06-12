@@ -1,22 +1,22 @@
-import profile6 from "../assets/profile6.jpg"
-import profile2 from "../assets/profile2.jpg"
-import profile3 from "../assets/profile3.jpg"
-import profile4 from "../assets/profile4.jpg"
-import profile5 from "../assets/profile5.jpg"
+import profile6 from "../assets/bckg17.jpg"
+import profile2 from "../assets/bckg19.jpg"
+import profile3 from "../assets/bckg18.jpg"
+import profile4 from "../assets/bckg20.jpg"
+import profile5 from "../assets/bckg21.jpg"
 
   
   const NewFriends = [
     {
         id: Math.random(),
         profileimg: profile6,
-        friendname: "Judge Judy",
+        friendname: "Luke Skywalker",
         accepted: false,
-        title: "News Anchor"
+        title: "Quality control"
     },
     {
         id: Math.random(),
         profileimg: profile2,
-        friendname: "Erza Scralet",
+        friendname: "Jack Senku",
         accepted: true,
         title: "Web Developer"
         
@@ -24,23 +24,23 @@ import profile5 from "../assets/profile5.jpg"
     {
         id: Math.random(),
         profileimg: profile3,
-        friendname: "Victoria Edward",
+        friendname: " Paulina Dante",
         accepted: false,
-        title: "Web Developer at ..."
+        title: "Lecturer"
     },
     {
         id: Math.random(),
         profileimg: profile4,
-        friendname: "Danny Phantom",
+        friendname: "Aries Shinsu",
         accepted:false,
-        title: "Content Writer"
+        title: "Tech Recruiter"
     },
     {
         id: Math.random(),
         profileimg: profile5,
-        friendname: "Isthar Order",
+        friendname: "Jotaro Zaworldo",
         accepted: false,
-        title: "Journalist"
+        title: "Chef"
     },
 ]
 

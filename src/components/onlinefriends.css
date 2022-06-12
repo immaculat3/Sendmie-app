@@ -10,7 +10,6 @@
 
 .online-container .headdy{
     color: var(--backdrop-filter-color);
-    text-shadow: var(--text-shadow);
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -65,4 +64,7 @@
 }
 .message-buttons a{
     color: white;
+}
+.friendname{
+    font-weight: 600;
 }

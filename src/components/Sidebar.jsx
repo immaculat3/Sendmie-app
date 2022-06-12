@@ -69,7 +69,7 @@ const Sidebar = ({showProfile, setShowProfile}) => {
              
             </ul>
         </div>
-        <Link to="/" className="view__profile"> view profile </Link>
+        <Link to="profile" className="view__profile"> view profile </Link>
      </div>
  </section>
 
@@ -99,7 +99,7 @@ const Sidebar = ({showProfile, setShowProfile}) => {
         <Link to="profile">
         <span className="prof__name">Sam Lanson</span>
         </Link>
-            <p className="text-muted descc">Web Develpor at Webestica</p>
+            <p className="text-muted descc">Web Developer at Webestica</p>
 
             <p className="text-muted desc">I'd love to change the world, but they wont give me the source code.</p>
             <div className="followers__stats">
@@ -129,7 +129,7 @@ const Sidebar = ({showProfile, setShowProfile}) => {
              
             </ul>
         </div>
-        <Link to="/" className="view__profile"> view profile </Link>
+        <Link to="profile" className="view__profile"> view profile </Link>
      </div>
  </motion.section>
  

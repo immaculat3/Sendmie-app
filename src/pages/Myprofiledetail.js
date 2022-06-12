@@ -1,4 +1,4 @@
-import profile1 from "../assets/profile6.jpg"
+import profile1 from "../assets/profile1.jpg"
 import background1 from "../assets/bckg3.jpg"
 
   

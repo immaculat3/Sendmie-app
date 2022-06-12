@@ -1,63 +1,59 @@
-import profile6 from "../assets/profile6.jpg"
-import profile2 from "../assets/profile2.jpg"
-import profile3 from "../assets/profile3.jpg"
-import profile4 from "../assets/profile4.jpg"
-import profile5 from "../assets/profile5.jpg"
-import background1 from "../assets/bckg1.jpg"
-import background2 from "../assets/bckg2.jpg"
-import background3 from "../assets/bckg3.jpg"
-import background4 from "../assets/bckg4.jpg"
-import background5 from "../assets/bckg5.jpg"
+import profile6 from "../assets/bckg7.jpg"
+import profile2 from "../assets/bckg8.jpg"
+import profile3 from "../assets/bckg9.jpg"
+import profile4 from "../assets/bckg12.jpg"
+import profile5 from "../assets/bckg11.jpg"
+
   
   const Recommend = [
     {
         id: 1,
         profileimg: profile6,
         background: profile6,
-        profilename: "Sarah Takumi",
+        profilename: "Joy Ubong",
         mutualFriends: 6,
         jobTitle: "Web Developer",
         desc: "I'd love to change the world, but they wont give me the source code.",
-        post: 256,
-        followers: 2.5,
-        following:365,
+        post: 906,
+        followers: 4.5,
+        following: 45,
     },
     {
         id: 2,
         profileimg: profile2,
         background: profile2,
-        profilename: "Sarutobi Aizen",
+        profilename: "Shane Buffer",
         mutualFriends: 16,
-        jobTitle: "Web Developer",
+        jobTitle: "Product Manager",
         desc: "I'd love to change the world, but they wont give me the source code.",
-        post: 256,
-        followers: 2.5,
-        following:365,
+        post: 56,
+        followers: 1.2,
+        following:65,
     },
     {
         id: 3,
         profileimg: profile3,
         background: profile3,
-        profilename: "Sasuke Uchiha",
+        profilename: "Sofia Bush",
         mutualFriends: 23,
-        jobTitle: "Web Developer",
+        jobTitle: "Cosplayer",
         desc: "I'd love to change the world, but they wont give me the source code.",
-        post: 256,
-        followers: 2.5,
-        following:365,
+        post: 100,
+        followers: 1,
+        following:169,
 
     },
     {
         id: 4,
         profileimg: profile4,
-        background: background4,
-        profilename: "Shinra Tensei",
+        background: profile4,
+        profilename: " George Mattew",
         mutualFriends: 2,
-        jobTitle: "Web Developer",
+        jobTitle: "Software Engineer",
         desc: "I'd love to change the world, but they wont give me the source code.",
-        post: 256,
-        followers: 2.5,
-        following:365,
+        post: 98,
+        followers: 1.5,
+        following: 90,
 
     },
     {

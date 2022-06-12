@@ -9,19 +9,15 @@ import Header from "../components/Header"
 import { motion } from 'framer-motion';
 
 const Loadvariants = {
-  hidden: { opacity: 0,
+  hidden: { 
     x: "150vw"
   },
-  visible: { opacity: 1,
+  visible: { 
     x: "0vw",
      transition: {
           type: "spring",
-          duration: 2
-     },
-     exit: {
-        x: "-100vw",
-       transition:{ ease: 'easeInOut'}
-      }
+          duration: 0.5
+     }
   }
 }
 
@@ -33,13 +29,13 @@ const Myprofile = () => {
     <>
     <Header />
     <motion.section className='profile__page'
-        initial="hidden"
-        animate="visible"
-        exit={{
-         x: "-100vw",
-        transition:{ ease: 'easeInOut'}
-       }}
-        variants={Loadvariants}
+     initial="hidden"
+     animate="visible"
+     exit={{
+      x: "-100vw",
+     transition:{ ease: 'easeInOut'}
+    }}
+     variants={Loadvariants}
     >
         <div className="profile__container">
             <div className="profile__overlay"></div>

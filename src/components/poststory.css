@@ -21,7 +21,6 @@
     outline: none;
     padding: 0 20px;
     color: var( --backdrop-filter-color);
-    text-shadow: var( --text-shadow);
     border-radius: var(--border2-radius);
 }
 

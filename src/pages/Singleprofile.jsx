@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Recommend from '../components/Recommend'
 import "./singleprofile.css"
@@ -17,17 +17,15 @@ const Loadvariants = {
     x: "0vw",
      transition: {
           type: "spring",
-          duration: 2
-     },
-     exit: {
-        x: "-100vw",
-       transition:{ ease: 'easeInOut'}
-      }
+          duration: 0.5
+     }
   }
 }
 
 
 const Singleprofile = () => {
+
+  const [follow, setFollow] = useState(false)
 
     const { profileId } = useParams();
     
@@ -37,15 +35,16 @@ const Singleprofile = () => {
   return (
     <>
           <Header />
-         <motion.div className="profile__container"
-           initial="hidden"
-           animate="visible"
-           exit={{
-            x: "-100vw",
-           transition:{ ease: 'easeInOut'}
-          }}
-           variants={Loadvariants}
-         >
+          <motion.section className='profile__page'
+          initial="hidden"
+          animate="visible"
+          exit={{
+           x: "-100vw",
+          transition:{ ease: 'easeInOut'}
+         }}
+          variants={Loadvariants}
+    >
+         <div className="profile__container">
             <div className="profile__overlay"></div>
                         <div className="myprofile__body" key={id}>
                            <div className="myprofile__background">
@@ -90,7 +89,8 @@ const Singleprofile = () => {
                          
                               
                         </div>
-        </motion.div>
+        </div>
+        </motion.section>
     </>
   )
 }

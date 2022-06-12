@@ -3,7 +3,6 @@
     background: linear-gradient( 90deg ,rgba(0,0,0,0.3) 10%, rgba(0,0,0,0.1)70%, transparent 100%);
     backdrop-filter: var( --backdrop-filter);
     color: var(--backdrop-filter-color);
-    text-shadow: var(--text-shadow);
     position: sticky;
     border-radius: 10px 10px 0 0;
     z-index: 0;
@@ -43,12 +42,12 @@
 .prof__name{
     font-size: 20px;
     color: var(--color-success);
-    text-shadow: var(--text-shadow);
 }
 .descc{
     font-size: 13px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 .desc{
     margin-bottom: 20px;
@@ -65,7 +64,8 @@
 .stat{
     padding:0  10px;
     border-right: 2px solid rgb(43, 42, 42);
-    
+    color: var(--color-primary);
+    font-weight: 600;
 }
 .stat p{
     margin-top: 10px;
@@ -77,18 +77,19 @@
     padding: 20px;
 }
 .profile__links li{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     cursor: pointer;
+    
     
 }
 .profile__links li a{
     color: var(--backdrop-filter-color);
-    text-shadow: var(--text-shadow);
     font-size: 1rem;
     display: flex;
     align-items: center;
     transition: all .3s ease;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .profile__links li a:hover{
@@ -104,12 +105,11 @@
     text-align: center;
     margin-bottom: 20px;
   color: var(--color-success);
-  text-shadow: var(--text-shadow);
   cursor: pointer;
 }
 
 ::-webkit-scrollbar{
-    width: 12px;
+    width: .2px;
 }
 ::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -126,7 +126,8 @@
 @media screen and (max-width: 1200px) {
 
 .sidebar{
-    width: 25%;
+    width: 30%;
+    
 }
 .stat p{
     margin-top: 10px;
@@ -167,6 +168,7 @@
         left: 0;
         height: calc(100vh - 300px);        overflow-y: scroll;
         display: block;
+        position: fixed;
     }
 
 .sideba{
@@ -222,9 +224,10 @@
 
 @media screen and (max-width: 768px) {
     .sideba{
-        width: 50%;
+        width: 60%;
         overflow-y: scroll;
         height: 100%;
+        position: fixed;
     }
     .coverimg{
         height: 70px;
@@ -246,9 +249,10 @@
 @media screen and (max-width: 480px) {
     
     .sideba{
-        width: 70%;
+        width: 85%;
         height: 100%;
         overflow-y: scroll;
+        position: fixed;
     }
     
     .coverimg{
@@ -274,8 +278,3 @@
 
 }
 
-@media screen and (max-width: 380px) {
-    .prof{
-        top: 16.05%;
-    }
-}

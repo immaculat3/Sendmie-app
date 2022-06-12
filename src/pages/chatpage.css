@@ -94,7 +94,6 @@
     border-radius: 10px;
     padding: 0 15px;
     color: var(--backdrop-filter-color);
-    text-shadow: var(--text-shadow);
 }
 
 .wide-chatpage-form button{
@@ -103,6 +102,32 @@
 .mobile-chatpage-top{
     display: none;
 }
+.chat-container{
+    background-color: transparent;
+    display: block;
+    align-items: center;
+    justify-content: left;
+    margin-top: 20px;
+    float: right;
+    flex-direction: column;
+    width: 10%;
+
+  }
+  .chat-contain{
+      padding: 10px;
+      float: right;
+  }
+
+  .sub-chat-container{
+      display: flex;
+      align-items: center;
+  }
+  .chat-msg{
+      padding: 2px 10px;
+      background: var(--color-primary);
+      border-radius: 10px;
+      margin-right: 5px;
+  }
 
 @media screen and (max-width: 1000px) {
 
@@ -170,12 +195,20 @@
        border-radius: 10px;
        backdrop-filter: 10px;
     }
+    .chat-name-info p{
+       font-size: 15px;
+       background-color: var(--backdrop-background);
+       padding: 5px;
+       border-radius: 10px;
+       backdrop-filter: 10px;
+    }
    .chatpage-form{
-       position: absolute;
+       position: fixed;
        bottom: 0;
        display: flex;
        width: 94%;
        padding: 20px;
+       z-index: 3;
    }
    .chatpage-form input{
     width: 90%;
@@ -186,11 +219,39 @@
     border-radius: 10px;
     padding: 0 15px;
     color: var(--backdrop-filter-color);
-    text-shadow: var(--text-shadow);
    }
    .chatpage-form button{
     padding: 10px 15px;
 }
+
+.chat-container{
+      background-color: transparent;
+      display: block;
+      align-items: center;
+      justify-content: left;
+      margin-top: 50px;
+      float: right;
+      flex-direction: column;
+      width: 10%;
+
+    }
+    .chat-contain{
+        padding: 10px;
+        float: right;
+    }
+
+    .sub-chat-container{
+        display: flex;
+        align-items: center;
+    }
+    .chat-msg{
+        padding: 2px 10px;
+        background: var(--color-primary);
+        border-radius: 10px;
+        margin-right: 5px;
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {

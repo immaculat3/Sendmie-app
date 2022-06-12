@@ -24,22 +24,22 @@ import background5 from "../assets/bckg5.jpg"
     {
         id: Math.random(),
         profileimg: profile2,
-        postimg: background2,
-        storyname: "Sarutobi Aizen",
+        postimg: profile2,
+        storyname: "Rukia Aizen",
         like: 27,
         comments: 6,
-        postNote: "it is a beautiful day to be out here in the sun, getting heated up for the day",
-        time: "2 hours ago"
+        postNote: "Happiness is a direction not a place",
+        time: "1 min ago"
     },
     {
         id: Math.random(),
         profileimg: profile3,
-        postimg: background5,
+        postimg: background1,
         storyname: "Sasuke Uchiha",
         like: 1,
         comments: 20,
-        postNote: "it is a beautiful day to be out here in the sun, getting heated up for the day",
-        time: "2 hours ago"
+        postNote: "Had a fun day with the team today, how did your day go??",
+        time: "3 hours ago"
     },
     {
         id: Math.random(),
@@ -48,8 +48,8 @@ import background5 from "../assets/bckg5.jpg"
         storyname: "Shinra Tensei",
         like: 56,
         comments: "be the first to comment",
-        postNote: "it is a beautiful day to be out here in the sun, getting heated up for the day",
-        time: "2 hours ago"
+        postNote: "What ever makes your soul happy, do it.",
+        time: "4 hours ago"
 
     },
     {
@@ -59,7 +59,7 @@ import background5 from "../assets/bckg5.jpg"
         storyname: "Isthar Order",
         like: 7,
         comments: 14,
-        postNote: "it is a beautiful day to be out here in the sun, getting heated up for the day",
+        postNote: "In nature nothing is perfect and everything is perfect",
         time: "2 hours ago"
     },
 ]

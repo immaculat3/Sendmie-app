@@ -13,20 +13,20 @@ import background5 from "../assets/bckg5.jpg"
     {
         id: Math.random(),
         profileimg: profile6,
-        background: background1,
+        background: background3,
         storyname: "Sarah Takumi"
     },
     {
         id: Math.random(),
         profileimg: profile2,
         background: background2,
-        storyname: "Sarutobi Aizen"
+        storyname: "Rukia Aizen"
 
     },
     {
         id: Math.random(),
         profileimg: profile3,
-        background: background3,
+        background: background1,
         storyname: "Sasuke Uchiha"
 
     },

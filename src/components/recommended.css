@@ -17,11 +17,10 @@ section .recon{
 
 .recon__header p{
     color: var( --backdrop-filter-color);
-    text-shadow: var(--text-shadow);
-    font-weight: 22px;
     padding: 10px 0 20px;
     text-align: center;
     font-size: 20px;
+    font-weight: 600;
 }
 
 

@@ -13,7 +13,7 @@ const Notifydata = [
       },
       {
           id: 4,
-          note: "Erza Scarlet and Mamashi Kishimoto liked your profile picture."
+          note: "Erza Scarlet and Mashashi Kishimoto liked your profile picture."
       },
       {
           id: 5,
